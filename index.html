@@ -4,57 +4,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <div class="container">
         <div class="sidebar">
-            <div class="side-content">
-                <ul>
-                    <li><a href="#">Dashboard</a></li>
-                </ul>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Profile</a></li>
-                    <li><a href="">messages</a></li>
-                    <li><a href="">Tasks</a></li>
-                    <li><a href="#">Communities</a></li>
-                </ul>
-                <div class="last">
-                    <ul>
-                        <li><a href="#">Settings</a></li>
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#">Privacy</a></li>
-                    </ul>
-                </div>
-            </div>
+            <h1 class="dashboard-title">Dashboard</h1>
+            
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Messages</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Tasks</a></li>
+                <li><a href="#">Communities</a></li>
+            </ul>
+
+            <ul class="nav-links-bottom">
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Privacy</a></li>
+            </ul>
         </div>
-        <div class="combined">
+
+        <div class="main-area">
             <div class="nav">
                 <div class="first-nav">
                     <div class="search-area">
                         <input type="text" placeholder="Search...">
                     </div>
                     <div class="user-info">
-                        <p class="name">Joseph Scripture</p>
+                        <img class="avatar-sm" src="placeholder.png" alt="User Avatar">
+                        <p class="name">Morgan Oakley</p>
                     </div>
                 </div>
 
                 <div class="second-nav">
                     <div class="greeting">
-                        <p>Hi There!</p>
-                        <h3>Joseph Scripture (@Joseph)</h3>
+                        <img class="avatar-lg" src="placeholder.png" alt="User Avatar">
+                        <div>
+                            <p>Hi there,</p>
+                            <h3>Morgan Oakley (@morgan)</h3>
+                        </div>
                     </div>
                     <div class="actions">
-                        
                         <button>New</button>
                         <button>Upload</button>
                         <button>Share</button>
                     </div>
                 </div>
             </div>
+
             <div class="main-content">
+                <div class="projects-section">
+                    <h2>Your Projects</h2>
+                    <div class="projects-grid">
+                        <div class="card">
+                            <h3>Super Cool Project</h3>
+                            <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                            <div class="card-actions">
+                                </div>
+                        </div>
+                        <div class="card">
+                            <h3>Less Cool Project</h3>
+                            <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor.</p>
+                            <div class="card-actions"></div>
+                        </div>
+                        <div class="card">
+                            <h3>Impossible App</h3>
+                            <p>In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.</p>
+                            <div class="card-actions"></div>
+                        </div>
+                        <div class="card">
+                            <h3>Easy Peasy App</h3>
+                            <p>Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget Givernaman aliquam. Curabitur dignissim nisi in tortor commodo.</p>
+                            <div class="card-actions"></div>
+                        </div>
+                        <div class="card">
+                            <h3>Ad Blocker</h3>
+                            <p>Quisque eget rutrum nisi. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed malesuada eros.</p>
+                            <div class="card-actions"></div>
+                        </div>
+                        <div class="card">
+                            <h3>Money Maker</h3>
+                            <p>Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus ut enim.</p>
+                            <div class="card-actions"></div>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="sidebar-content">
+                    <div class="announcements">
+                        <h2>Announcements</h2>
+                        <ul>
+                            <li>
+                                <h4>Site Maintenance</h4>
+                                <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue...</p>
+                            </li>
+                            <li>
+                                <h4>Community Share Day</h4>
+                                <p>Nam vel turpis nec metus rutrum egestas. In hac habitasse platea dictumst.</p>
+                            </li>
+                            <li>
+                                <h4>Updated Privacy Policy</h4>
+                                <p>Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagittis sem in mattis...</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="trending">
+                        <h2>Trending</h2>
+                        <ul>
+                            <li>
+                                <img class="avatar-sm" src="placeholder.png" alt="User Avatar">
+                                <div>
+                                    <p>@tegan</p>
+                                    <span>World Peace Builder</span>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="avatar-sm" src="placeholder.png" alt="User Avatar">
+                                <div>
+                                    <p>@morgan</p>
+                                    <span>Super Cool Project</span>
+                                </div>
+                            </li>
+                             <li>
+                                <img class="avatar-sm" src="placeholder.png" alt="User Avatar">
+                                <div>
+                                    <p>@kendall</p>
+                                    <span>Life Changing App</span>
+                                </div>
+                            </li>
+                             <li>
+                                <img class="avatar-sm" src="placeholder.png" alt="User Avatar">
+                                <div>
+                                    <p>@alex</p>
+                                    <span>No Traffic Maker</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
